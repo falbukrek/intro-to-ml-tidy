@@ -237,7 +237,7 @@ knn_spec <-
 
 set.seed(100) # Important!
 fit_split(Sale_Price ~ Gr_Liv_Area, 
-          model = rt_spec, 
+          model = knn_spec, 
           split = ames_split) %>% 
   collect_metrics()
 ```
